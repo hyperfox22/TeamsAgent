@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "dev"
+    },
+    "projectName": {
+      "value": "socbot"
+    },
+    "microsoftAppId": {
+      "value": "cadbcc4d-867d-4f2b-b11f-eda4b75555dc"
+    },
+    "microsoftAppPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/{subscription-id}/resourceGroups/{rg-name}/providers/Microsoft.KeyVault/vaults/{vault-name}"
+        },
+        "secretName": "microsoftAppPassword"
+      }
+    },
+    "azureAiProjectEndpoint": {
+      "value": "https://hypsocdev-aifoundry.cognitiveservices.azure.com/"
+    },
+    "projectConnectionString": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/{subscription-id}/resourceGroups/{rg-name}/providers/Microsoft.KeyVault/vaults/{vault-name}"
+        },
+        "secretName": "projectConnectionString"
+      }
+    },
+    "agentId": {
+      "value": "{your-agent-id}"
+    },
+    "tenantId": {
+      "value": "16b3c013-d300-468d-ac64-7eda0820b6d3"
+    }
+  }
+}

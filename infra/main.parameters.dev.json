@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "baseName": {
+      "value": "socai"
+    },
+    "env": {
+      "value": "dev"
+    },
+    "deployBot": {
+      "value": true
+    },
+    "enableTeamsChannel": {
+      "value": true
+    },
+    "deployAiFoundry": {
+      "value": true
+    },
+    "botMsaAppId": {
+      "value": "cadbcc4d-867d-4f2b-b11f-eda4b75555dc"
+    },
+    "teamsAppId": {
+      "value": "cadbcc4d-867d-4f2b-b11f-eda4b75555dc"
+    },
+    "functionUseLinux": {
+      "value": true
+    },
+    "functionPlanSku": {
+      "value": "Y1"
+    },
+    "enableCosmosFreeTier": {
+      "value": true
+    }
+  }
+}

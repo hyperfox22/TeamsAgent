@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "qa"
+    },
+    "projectName": {
+      "value": "teamsagent"
+    },
+    "location": {
+      "value": "eastus2"
+    },
+    "deployOpenAI": {
+      "value": true
+    },
+    "deployBot": {
+      "value": true
+    },
+    "deploySearch": {
+      "value": true
+    },
+    "deployCosmosDb": {
+      "value": true
+    },
+    "deployKeyVault": {
+      "value": true
+    },
+    "deployFunctionApp": {
+      "value": true
+    },
+    "deployStorage": {
+      "value": true
+    },
+    "deployApplicationInsights": {
+      "value": true
+    },
+    "aiFoundryModelName": {
+      "value": "gpt-4.1-mini"
+    },
+    "aiFoundryModelVersion": {
+      "value": "2025-04-14"
+    },
+    "aiFoundryModelCapacity": {
+      "value": 50
+    },
+    "aiFoundryProjectName": {
+      "value": "hyperSOC"
+    },
+    "functionAppSkuName": {
+      "value": "EP1"
+    },
+    "functionAppSkuTier": {
+      "value": "ElasticPremium"
+    },
+    "functionAppPlatform": {
+      "value": "linux"
+    },
+    "cosmosAccountOfferType": {
+      "value": "Standard"
+    },
+    "cosmosDefaultConsistencyLevel": {
+      "value": "Session"
+    },
+    "searchServiceSkuName": {
+      "value": "basic"
+    },
+    "searchServiceReplicaCount": {
+      "value": 1
+    },
+    "searchServicePartitionCount": {
+      "value": 1
+    }
+  }
+}

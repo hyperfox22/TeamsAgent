@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
   "manifestVersion": "1.19",
   "version": "1.0.0",
-  "id": "cadbcc4d-867d-4f2b-b11f-eda4b75555dc",
+  "id": "e9849f17-b80f-4de8-b855-671953dbc3f0",
   "developer": {
     "name": "SOC Team",
     "websiteUrl": "https://github.com/microsoft/teams-ai",
@@ -24,7 +24,7 @@
   "accentColor": "#FF6900",
   "bots": [
     {
-      "botId": "cadbcc4d-867d-4f2b-b11f-eda4b75555dc",
+      "botId": "e9849f17-b80f-4de8-b855-671953dbc3f0",
       "scopes": ["personal", "team", "groupChat"],
       "supportsFiles": false,
       "isNotificationOnly": false,
