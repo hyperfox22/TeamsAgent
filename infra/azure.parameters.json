@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "value": "socbot-dev"
+    },
+    "runtime": {
+      "value": "node"
+    },
+    "location": {
+      "value": "East US"
+    },
+    "sku": {
+      "value": "FC1"
+    },
+    "projectConnectionString": {
+      "value": ""
+    },
+    "agentId": {
+      "value": ""
+    },
+    "botAppId": {
+      "value": ""
+    },
+    "botAppPassword": {
+      "value": ""
+    },
+    "m365ClientId": {
+      "value": ""
+    },
+    "m365ClientSecret": {
+      "value": ""
+    },
+    "m365TenantId": {
+      "value": ""
+    },
+    "aiProjectResourceGroup": {
+      "value": ""
+    },
+    "aiProjectName": {
+      "value": ""
+    },
+    "cognitiveServicesAccountName": {
+      "value": ""
+    }
+  }
+}

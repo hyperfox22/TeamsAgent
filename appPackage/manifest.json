@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.19",
+  "version": "1.0.0",
+  "id": "cadbcc4d-867d-4f2b-b11f-eda4b75555dc",
+  "developer": {
+    "name": "SOC Team",
+    "websiteUrl": "https://github.com/microsoft/teams-ai",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "SOCBot",
+    "full": "SOCBot - Security Operations Center Assistant"
+  },
+  "description": {
+    "short": "AI-powered security assistant for your organization",
+    "full": "SOCBot is an AI-powered Security Operations Center assistant that helps with threat analysis, security incident response, compliance guidance, and security best practices. Powered by Azure AI Foundry agents, SOCBot provides intelligent insights and recommendations to enhance your organization's security posture."
+  },
+  "accentColor": "#FF6900",
+  "bots": [
+    {
+      "botId": "cadbcc4d-867d-4f2b-b11f-eda4b75555dc",
+      "scopes": ["personal", "team", "groupChat"],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "supportsCalling": false,
+      "supportsVideo": false,
+      "commandLists": [
+        {
+          "scopes": ["personal", "team", "groupChat"],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Get help and available commands"
+            },
+            {
+              "title": "Analyze threat",
+              "description": "Analyze security threats and indicators of compromise"
+            },
+            {
+              "title": "Security best practices",
+              "description": "Get security implementation recommendations"
+            },
+            {
+              "title": "Compliance guidance",
+              "description": "Get information about security frameworks and compliance"
+            },
+            {
+              "title": "Risk assessment",
+              "description": "Evaluate security risks and vulnerabilities"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeExtensions": [],
+  "configurableTabs": [],
+  "staticTabs": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{DOMAIN_NAME}}"
+  ],
+  "webApplicationInfo": {
+    "id": "cadbcc4d-867d-4f2b-b11f-eda4b75555dc",
+    "resource": "api://cadbcc4d-867d-4f2b-b11f-eda4b75555dc"
+  },
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "ChannelMessage.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "TeamMember.Read.Group", 
+          "type": "Application"
+        }
+      ]
+    }
+  }
+}

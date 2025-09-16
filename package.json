@@ -1,0 +1,47 @@
+{
+  "name": "socbot-teams-notification",
+  "version": "1.0.0",
+  "description": "SOCBot - Microsoft Teams notification bot with Azure AI Foundry integration",
+  "main": "dist/src/httpTrigger.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run build && func start",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.1",
+    "@azure/ai-projects": "^1.0.0-beta.2",
+    "@azure/identity": "^4.5.0",
+    "@microsoft/agents-hosting": "^1.0.0-beta.1",
+    "@microsoft/teamsfx": "^2.5.0",
+    "botbuilder": "^4.23.0",
+    "botbuilder-core": "^4.23.0",
+    "adaptivecards": "^3.0.4",
+    "adaptivecards-templating": "^2.3.1",
+    "dotenv": "^16.4.5",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.10",
+    "@types/uuid": "^10.0.0",
+    "azure-functions-core-tools": "^4.0.6280",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "microsoft-teams",
+    "azure-functions",
+    "azure-ai-foundry",
+    "notification-bot",
+    "adaptive-cards"
+  ],
+  "author": "SOC Team",
+  "license": "MIT"
+}
